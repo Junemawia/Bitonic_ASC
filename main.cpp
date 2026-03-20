@@ -7,6 +7,7 @@ using namespace std;
 
 long long comparisonCount = 0;
 long long swapCount = 0;
+void bitonicMerge(vector<int>& arr, int low, int cnt, int dir);
 
 void compAndSwap(vector<int>& arr, int i, int j, int dir) {
     comparisonCount++;
