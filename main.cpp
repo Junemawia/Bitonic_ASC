@@ -15,3 +15,14 @@ void compAndSwap(vector<int>& arr, int i, int j, int dir) {
         swapCount++;
     }
 }
+void bitonicSort(vector<int>& arr, int low, int cnt, int dir) {
+    if (cnt > 1) {
+        int k = cnt / 2;
+
+        bitonicSort(arr, low, k, 1);
+
+        bitonicSort(arr, low + k, k, 0);
+
+        bitonicMerge(arr, low, cnt, dir);
+    }
+}
