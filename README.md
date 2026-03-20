@@ -27,3 +27,40 @@ Reasoning: The algorithm consists of \log n stages of merging. Each merge takes 
 
 //​Space Complexity
 ​Space Complexity: O(n \log^2 n) for the recursive implementation (due to the call stack), or O(n) if implemented iteratively. My solution uses a recursive approach for clarity.
+
+Original Size: 1 | Padded to: 1
+Comparisons: 0 | Swaps: 0
+------------------------------------------------
+Original Size: 2 | Padded to: 2
+Comparisons: 1 | Swaps: 1
+------------------------------------------------
+Original Size: 3 | Padded to: 4
+Comparisons: 6 | Swaps: 4
+------------------------------------------------
+Original Size: 4 | Padded to: 4
+Comparisons: 6 | Swaps: 1
+------------------------------------------------
+Original Size: 5 | Padded to: 8
+Comparisons: 24 | Swaps: 10
+------------------------------------------------
+Original Size: 10 | Padded to: 16
+Comparisons: 80 | Swaps: 42
+------------------------------------------------
+Original Size: 250 | Padded to: 256
+Comparisons: 4608 | Swaps: 2306
+------------------------------------------------
+Original Size: 999 | Padded to: 1024
+Comparisons: 28160 | Swaps: 14119
+------------------------------------------------
+Original Size: 9999 | Padded to: 16384
+Comparisons: 860160 | Swaps: 439389
+------------------------------------------------
+Original Size: 89786 | Padded to: 131072
+Comparisons: 10027008 | Swaps: 5188965
+------------------------------------------------
+Original Size: 789300 | Padded to: 1048576
+Comparisons: 110100480 | Swaps: 54898752
+------------------------------------------------
+Original Size: 1780000 | Padded to: 2097152
+Comparisons: 242221056 | Swaps: 120553632
+------------------------------------------------
