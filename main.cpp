@@ -27,3 +27,24 @@ void bitonicSort(vector<int>& arr, int low, int cnt, int dir) {
         bitonicMerge(arr, low, cnt, dir);
     }
 }
+int main() {
+    
+int arr[] = {3, 7, 4, 8, 6, 2, 1, 5};
+vector<int> data(arr, arr + sizeof(arr) / sizeof(arr[0]));
+    int originalSize = data.size();
+
+    cout << "Sorting " << originalSize << " elements..." << endl;
+
+    bitonicSort(data, 0, data.size(), 1);
+
+    cout << "Sorted List: ";
+    for (int i = 0; i < originalSize; i++) {
+        cout << data[i] << " ";
+    }
+
+    cout << "\n\n--- Performance Metrics ---" << endl;
+    cout << "Total Comparisons: " << comparisonCount << endl;
+    cout << "Total Swaps: " << swapCount << endl;
+
+    return 0;
+}
